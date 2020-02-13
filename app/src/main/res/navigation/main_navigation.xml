@@ -30,7 +30,9 @@
         tools:layout="@layout/fragment_category">
         <action
             android:id="@+id/action_categoryFragment3_to_detailCategoryFragment"
-            app:destination="@id/detailCategoryFragment" />
+            app:destination="@id/detailCategoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
     <activity
         android:id="@+id/profileActivity"
@@ -60,6 +62,8 @@
         <action
             android:id="@+id/action_detailCategoryFragment_to_homeFragment"
             app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
             app:launchSingleTop="true"
             app:popUpTo="@+id/homeFragment"
             app:popUpToInclusive="true" />
